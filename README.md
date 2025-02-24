@@ -1,15 +1,38 @@
-# Ansh & Riley Full-Stack Template
+# Amsterdam Restaurant Guide
 
-This is a full-stack template project for Software Composers to create  applications with AI.
+An AI-powered restaurant guide for Amsterdam, helping you discover the perfect dining spots across the city. Get personalized restaurant recommendations with detailed information, including addresses that are automatically detected and displayed on an interactive map.
 
-## Getting started
-To create a new project, you go to `/paths`, choose from our list of Paths, and then use Cursor's Composer feature to quickly scaffold your project!
-
-You can also edit the Path's prompt template to be whatever you like!
+## Features
+- Smart restaurant recommendations based on your preferences
+- Automatic address detection and map visualization
+- Real-time chat interface with AI
+- Personalized dining suggestions
+- Interactive Google Maps integration
 
 ## Technologies used
-This doesn't really matter, but is useful for the AI to understand more about this project. We are using the following technologies
 - React with Next.js 14 App Router
 - TailwindCSS
-- Firebase Auth, Storage, and Database
-- Multiple AI endpoints including OpenAI, Anthropic, and Replicate using Vercel's AI SDK
+- OpenAI API for intelligent restaurant recommendations
+- Google Maps API for location visualization
+- Vercel AI SDK for streaming responses
+
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to start exploring Amsterdam's restaurants.
+
+## Environment Variables
+
+To run this project, you need to add the following environment variables to your `.env.local` file:
+
+```env
+OPENAI_API_KEY=your_openai_api_key
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+```
